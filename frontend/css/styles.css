@@ -1,0 +1,178 @@
+/* Import clean modern font (similar to Fonder Studio’s style) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #fdfdfd;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: #faf7fb; /* subtle tinted background (light pastel, not plain white) */
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #6a42f4; /* subtle Rio-themed hover color */
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-bar {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.search-bar:focus {
+  border-color: #6a42f4;
+}
+
+.btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn-login {
+  background: transparent;
+  color: #444;
+}
+
+.btn-login:hover {
+  background: #eee;
+}
+
+.btn-signup {
+  background: #6a42f4;
+  color: white;
+}
+
+.btn-signup:hover {
+  background: #5531d1;
+}
+
+.cart-icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #faf7fb, #f3f0ff); /* subtle tinted bg */
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.hero-text h1 span {
+  color: #6a42f4; /* Rio purple highlight */
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #555;
+  margin: 15px 0 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background: #6a42f4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background: #5531d1;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #6a42f4;
+  color: #6a42f4;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.btn-secondary:hover {
+  background: #6a42f4;
+  color: white;
+}
+
+.hero-image img {
+  width: 400px;
+  max-width: 100%;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* floating Rio effect */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
