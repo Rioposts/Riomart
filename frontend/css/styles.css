@@ -80,6 +80,8 @@ body {
 .btn-login {
   background: transparent;
   color: #444;
+  border-radius: 20px ;
+  padding: 10px 20px;
 }
 
 .btn-login:hover {
@@ -89,6 +91,8 @@ body {
 .btn-signup {
   background: #6a42f4;
   color: white;
+  border-radius: 20px ;
+  padding: 10px 20px;
 }
 
 .btn-signup:hover {
@@ -148,6 +152,7 @@ body {
 
 .btn-primary:hover {
   background: #5531d1;
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -162,6 +167,7 @@ body {
 .btn-secondary:hover {
   background: #6a42f4;
   color: white;
+  cursor: pointer;
 }
 
 .hero-image img {
@@ -175,4 +181,45 @@ body {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
+}
+.categories {
+  text-align: center;
+  padding: 50px 40px;
+  background: #ffffff;
+}
+
+.categories h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2d2d2d;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.category-card {
+  background: #faf7fb;
+  padding: 20px;
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.category-card img {
+  width: 100%;
+  max-width: 120px;
+  margin: 0 auto 15px;
+}
+
+.category-card p {
+  font-weight: 500;
+  color: #444;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
