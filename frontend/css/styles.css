@@ -15,6 +15,7 @@ body {
   padding: 12px 40px;
   background: #faf7fb; /* subtle tinted background (light pastel, not plain white) */
   border-bottom: 1px solid #eee;
+  
 }
 
 .logo {
@@ -222,4 +223,68 @@ body {
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+/* Featured Products */
+.featured-products {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fafafa;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.price {
+  font-weight: bold;
+  color: #009688;
+  margin-bottom: 0.8rem;
+}
+
+.product-card button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #ff6f61;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-card button:hover {
+  background: #e85a4f;
 }
