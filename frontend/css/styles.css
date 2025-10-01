@@ -288,3 +288,85 @@ body {
 .product-card button:hover {
   background: #e85a4f;
 }
+/* Rio Recommendation */
+.rio-recommendation {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.rio-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.rio-img {
+  width: 180px;
+  height: auto;
+}
+
+.rio-text h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.rio-text p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.recommend-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.recommend-card:hover {
+  transform: translateY(-5px);
+}
+
+.recommend-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recommend-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.recommend-card .price {
+  font-weight: bold;
+  color: #009688;
+  margin-bottom: 0.8rem;
+}
+
+.recommend-card button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #6C63FF;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.recommend-card button:hover {
+  background: #5848d4;
+}
